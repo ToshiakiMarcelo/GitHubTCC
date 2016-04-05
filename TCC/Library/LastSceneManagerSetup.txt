@@ -1,6 +1,10 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/Do Seiji/Level 0 - 0.unity
+=======
+- path: Assets/DuvinoTest.unity
+>>>>>>> origin/master
 =======
 - path: Assets/DuvinoTest.unity
 >>>>>>> origin/master
