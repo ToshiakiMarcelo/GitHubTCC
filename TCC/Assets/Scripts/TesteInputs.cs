@@ -14,7 +14,5 @@ public class TesteInputs : AbstractBehavior {
 		bool jump   = inputState.GetButtonValue(inputButtons[2]);
 		bool suicide = inputState.GetButtonValue(inputButtons[3]);
 		bool checkPoint  = inputState.GetButtonValue(inputButtons[4]);
-		//Debug.Log (suicide);
-		Debug.Log (checkPoint);
 	}
 }

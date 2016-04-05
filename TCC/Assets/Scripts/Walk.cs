@@ -10,7 +10,7 @@ public class Walk : AbstractBehavior {
 		running    = false;
 		bool right = inputState.GetButtonValue(inputButtons[0]);
 		bool left  = inputState.GetButtonValue(inputButtons[1]);
-//		bool run   = inputState.GetButtonValue(inputButtons[2]);
+		//bool run   = inputState.GetButtonValue(inputButtons[2]);
 		float teste = inputState.GetButtonHoldTime (inputButtons [0]);
 
 		if (right || left) {

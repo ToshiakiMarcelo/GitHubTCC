@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public enum Buttons { Right, Left, Up, Z, X}
+public enum Buttons { Right, Left, Up, UpHold, Z, X}
 
-public enum Condition { GreaterThan, LessThan }
+public enum Condition { GreaterThan, LessThan, EqualsTo}
 
 
 
@@ -22,6 +22,8 @@ public class InputAxisState {
 				return val > offValue;
 			case Condition.LessThan:
 				return val < offValue;
+			case Condition.EqualsTo:
+				return val != offValue;
 			}
 			return false;
 		}
