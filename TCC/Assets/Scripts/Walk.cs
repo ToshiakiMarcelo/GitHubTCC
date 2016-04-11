@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Walk : AbstractBehavior {
 	public float speed         = 5f;
+	public float maxVelocity   = 5f;
 	protected float timer = 0;
 	protected Directions directions;
 
@@ -33,10 +34,13 @@ public class Walk : AbstractBehavior {
 			if (timer >= 1)
 				holdTime = 1;
 
-			body2d.AddForce (new Vector2 ((velX - body2d.velocity.x) * 5, 0));
+			body2d.AddForce (new Vector2 (velX, 0));
+			Vector2 v = body2d.velocity;
+			v.x = Mathf.Clamp (v.x,-maxVelocity, maxVelocity);
+			body2d.velocity = v;
 		} 
 		else {
-			body2d.velocity = new Vector2 (0, body2d.velocity.y);
+			
 		}
 	}
 }

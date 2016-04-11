@@ -4,8 +4,8 @@ using System.Collections;
 public class Jump : AbstractBehavior {
 	//public    GameObject dustEffectPrefab;
 	public 	  bool 		 jumping;
-	public    float      jumpForce      = 3.5f;
-	public    float		 jumpTime		= 0.5f;
+	public    float      jumpForce      = 8f;
+	public    float		 jumpTime		= 0.1f;
 	public    float      jumpDelay      = .1f;
 	public    int        jumpCount      = 2;
 	protected float      lastJumpTime   = 0;
@@ -38,23 +38,41 @@ public class Jump : AbstractBehavior {
 	IEnumerator JumpRoutine()
 	{
 		jumping = true;
-		float startGravity = body2d.gravityScale;
-		body2d.gravityScale = 0;
-		body2d.velocity = new Vector2 (body2d.velocity.x, jumpForce);
-		float timer = 0f;
-		lastJumpTime = Time.time;
+		body2d.velocity = new Vector2 (body2d.velocity.x,0);
+		float timer = 0;
+
 		bool holdJump = inputState.GetButtonValue (inputButtons [1]);
 
-		while (holdJump && timer < jumpTime)
+		while(holdJump && timer < jumpTime)
 		{
-			timer += Time.deltaTime;
 			holdJump = inputState.GetButtonValue (inputButtons [1]);
+			float proportionCompleted = timer / jumpTime;
+			Vector2 thisFrameJumpVector = Vector2.Lerp(Vector2.up * jumpForce, Vector2.zero, proportionCompleted);
+			body2d.AddForce(thisFrameJumpVector);
+			timer += Time.deltaTime;
 			yield return null;
 		}
 
-		if (startGravity != 0) body2d.gravityScale = startGravity;
-
 		jumping = false;
+
+//		jumping = true;
+//		float startGravity = body2d.gravityScale;
+//		body2d.gravityScale = 0;
+//		body2d.velocity = new Vector2 (body2d.velocity.x, jumpForce);
+//		float timer = 0f;
+//		lastJumpTime = Time.time;
+//		bool holdJump = inputState.GetButtonValue (inputButtons [1]);
+//
+//		while (holdJump && timer < jumpTime)
+//		{
+//			timer += Time.deltaTime;
+//			holdJump = inputState.GetButtonValue (inputButtons [1]);
+//			yield return null;
+//		}
+//
+//		if (startGravity != 0) body2d.gravityScale = startGravity;
+//
+//		jumping = false;
 		ToggleScripts (true);
 	}
 }
