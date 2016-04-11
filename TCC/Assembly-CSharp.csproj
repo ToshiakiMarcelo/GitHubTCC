@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Jump.cs" />
      <Compile Include="Assets\Scripts\TesteInputs.cs" />
      <Compile Include="Assets\Scripts\Walk.cs" />
+     <Compile Include="Assets\Scripts\WallJump.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity_5_3_4f/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
