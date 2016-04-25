@@ -38,15 +38,15 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity_5_3_4f/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity_5_3_4f/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ActionTrigger.cs" />
      <Compile Include="Assets\Scripts\AbstractBehavior.cs" />
+     <Compile Include="Assets\Scripts\ActionTrigger.cs" />
      <Compile Include="Assets\Scripts\CollisionState.cs" />
      <Compile Include="Assets\Scripts\Do Seiji\CameraController.cs" />
      <Compile Include="Assets\Scripts\Do Seiji\PlayerMechanics.cs" />
@@ -56,14 +56,14 @@
      <Compile Include="Assets\Scripts\Jump.cs" />
      <Compile Include="Assets\Scripts\Slide.cs" />
      <Compile Include="Assets\Scripts\TesteInputs.cs" />
+     <Compile Include="Assets\Scripts\VelocityXController.cs" />
      <Compile Include="Assets\Scripts\Walk.cs" />
      <Compile Include="Assets\Scripts\WallJump.cs" />
-     <Compile Include="Assets\VelocityXController.cs" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity_5_3_4f/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity_5_3_4f/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

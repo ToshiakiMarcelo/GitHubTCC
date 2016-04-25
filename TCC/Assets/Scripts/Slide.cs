@@ -16,13 +16,15 @@ public class Slide : AbstractBehavior {
 	}
 
 	IEnumerator SlideForce() {
-		float impulse = slipForce * body2d.velocity.x;
+		float impulse = slipForce * Mathf.Abs(body2d.velocity.x);
+		initialDirection = body2d.velocity.x > 0 ? Directions.Right : Directions.Left;
 		float stopSlipping = 0;
 
 		Walk walk = GetComponent<Walk> ();
+		walk.actualDirection = initialDirection;
 
 		while (impulse > 0) {
-			Vector2 slipForceFrameVector = Vector2.right * impulse;
+			Vector2 slipForceFrameVector = Vector2.right * impulse * (float)initialDirection;
 
 			body2d.AddForce (slipForceFrameVector);
 			impulse -= Time.deltaTime * stopSlipping;
@@ -33,12 +35,12 @@ public class Slide : AbstractBehavior {
 			yield return null;
 		}
 
-		while (body2d.velocity.x >= walk.maxVelocity|| body2d.velocity.x <= -walk.maxVelocity) {
-			velocityX.BreakVelocity (initialDirection);
+		while (body2d.velocity.x >= walk.maxVelocity || body2d.velocity.x <= -walk.maxVelocity) {
+			velocityX.BreakVelocity ();
 
 			yield return null;
 		}
-
+		
 		ToggleScripts (true);
 	}
 }
