@@ -26,7 +26,7 @@ public class WallJump : AbstractBehavior {
 	IEnumerator JumpWallRoutine()
 	{
 		jumpingOffWall = true;
-		body2d.velocity = new Vector2 (0,0);
+		body2d.velocity = Vector2.zero;
 		float timer = 0;
 
 		while(timer < jumpTime)

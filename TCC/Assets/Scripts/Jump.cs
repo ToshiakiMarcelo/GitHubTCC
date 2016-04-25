@@ -3,13 +3,13 @@ using System.Collections;
 
 public class Jump : AbstractBehavior {
 	//public    GameObject dustEffectPrefab;
-	public 	  bool 		 jumping;
-	public    float      jumpForce      = 8f;
-	public    float		 jumpTime		= 0.1f;
-	public    float      jumpDelay      = .1f;
-	public    int        jumpCount      = 2;
-	protected float      lastJumpTime   = 0;
-	protected int        jumpsRemaining = 0;
+	public bool jumping;
+	public float jumpForce = 8f;
+	public float jumpTime = 0.1f;
+	public float jumpDelay = .1f;
+	public int jumpCount = 2;
+	protected float lastJumpTime = 0;
+	protected int jumpsRemaining = 0;
 
 	protected virtual void Update () {
 		bool  canJump  = inputState.GetButtonValue(inputButtons[0]);

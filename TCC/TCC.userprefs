@@ -1,19 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Walk.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\WallJump.cs">
     <Files>
+      <File FileName="Assets\Scripts\Slide.cs" Line="11" Column="1" />
+      <File FileName="Assets\Scripts\Walk.cs" Line="23" Column="47" />
+      <File FileName="Assets\Scripts\Jump.cs" Line="39" Column="1" />
+      <File FileName="Assets\Scripts\InputManager.cs" Line="4" Column="40" />
+      <File FileName="Assets\Scripts\CollisionState.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\AbstractBehavior.cs" Line="16" Column="52" />
+      <File FileName="Assets\ActionTrigger.cs" Line="18" Column="33" />
       <File FileName="Assets\Scripts\InputState.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Walk.cs" Line="45" Column="71" />
-      <File FileName="Assets\Scripts\WallJump.cs" Line="35" Column="60" />
-      <File FileName="Assets\Scripts\Jump.cs" Line="19" Column="44" />
-      <File FileName="Assets\Scripts\CollisionState.cs" Line="13" Column="1" />
-      <File FileName="Assets\Scripts\AbstractBehavior.cs" Line="14" Column="52" />
-      <File FileName="..\..\Arrumar Isso (Não esquece pfvr Marcelo Caralho\AulaTappyBird\Assets\Advanced2D\Scripts\Behaviors\WallJump.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Do Seiji\PlayerMechanics.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TesteInputs.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\InputManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FaceDirection.cs" Line="1" Column="1" />
-      <File FileName="..\..\Arrumar Isso (Não esquece pfvr Marcelo Caralho\AulaTappyBird\Assets\Advanced2D\Scripts\Behaviors\Duck.cs" Line="1" Column="1" />
+      <File FileName="Assets\VelocityXController.cs" Line="4" Column="54" />
+      <File FileName="Assets\Scripts\WallJump.cs" Line="29" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
