@@ -45,6 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Death.cs" />
+     <Compile Include="Assets\DeathMenu.cs" />
+     <Compile Include="Assets\Fart.cs" />
+     <Compile Include="Assets\Respawn.cs" />
      <Compile Include="Assets\Scripts\AbstractBehavior.cs" />
      <Compile Include="Assets\Scripts\ActionTrigger.cs" />
      <Compile Include="Assets\Scripts\CollisionState.cs" />
