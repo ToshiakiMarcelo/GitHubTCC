@@ -45,19 +45,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Death.cs" />
-     <Compile Include="Assets\DeathMenu.cs" />
-     <Compile Include="Assets\Fart.cs" />
-     <Compile Include="Assets\Respawn.cs" />
      <Compile Include="Assets\Scripts\AbstractBehavior.cs" />
      <Compile Include="Assets\Scripts\ActionTrigger.cs" />
      <Compile Include="Assets\Scripts\CollisionState.cs" />
+     <Compile Include="Assets\Scripts\Death.cs" />
+     <Compile Include="Assets\Scripts\DeathMenu.cs" />
      <Compile Include="Assets\Scripts\Do Seiji\CameraController.cs" />
      <Compile Include="Assets\Scripts\Do Seiji\PlayerMechanics.cs" />
      <Compile Include="Assets\Scripts\FaceDirection.cs" />
+     <Compile Include="Assets\Scripts\Fart.cs" />
+     <Compile Include="Assets\Scripts\Gravity.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />
      <Compile Include="Assets\Scripts\InputState.cs" />
      <Compile Include="Assets\Scripts\Jump.cs" />
+     <Compile Include="Assets\Scripts\Respawn.cs" />
      <Compile Include="Assets\Scripts\Slide.cs" />
      <Compile Include="Assets\Scripts\TesteInputs.cs" />
      <Compile Include="Assets\Scripts\VelocityXController.cs" />

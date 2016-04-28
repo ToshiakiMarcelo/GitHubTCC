@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class DeathMenu : MonoBehaviour {
 
+	public GameObject deathGravityPrefab;
 	public GameObject slidePrefab;
 	public GameObject fartPrefab;
 
@@ -32,19 +33,23 @@ public class DeathMenu : MonoBehaviour {
 		else state = true;
 
 		if (deathResource) {
+			Transform gravity = Instantiate (deathGravityPrefab).transform;
+
 			Vector3 scaleDesired = characterPosition.transform.localScale;
 			Vector3 positionDesired = characterPosition.transform.position;
 
+			gravity.transform.position = positionDesired;
+
 			deathResource.transform.localScale = new Vector3 (scaleDesired.x, .5f, 1);
-			Instantiate (deathResource).transform.position = positionDesired;
+			deathResource.transform.position = positionDesired;
+
+			Instantiate (deathResource).transform.parent = gravity;
 		}
 
 		if (!state) characterPosition.position = respawnPoint.position;
 	}
 
 	void Update() {
-		//positionDesired = character.transform.position;
-
 		right = false;
 		left = false;
 

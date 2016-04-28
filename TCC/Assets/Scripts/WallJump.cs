@@ -6,6 +6,7 @@ public class WallJump : AbstractBehavior {
 	public 	  float 	jumpForce 	 = 3.5f;
 	public    float		jumpTime	 = 0.5f;
 	public 	  float 	speed        = 5f;
+	public float maxVelocity = 5f;
 	protected Vector2  	jumpVelocity = new Vector2 ();
 
 	void Update () {
@@ -16,7 +17,6 @@ public class WallJump : AbstractBehavior {
 			if (canJump && !jumpingOffWall && holdTime == 0) {
 				ToggleScripts (false);
 				inputState.direction = inputState.direction == Directions.Right ? Directions.Left : Directions.Right;
-				//jumpVelocity = new Vector2 (speed, jumpForce);
 				StartCoroutine (JumpWallRoutine());
 			}
 		}
@@ -28,12 +28,23 @@ public class WallJump : AbstractBehavior {
 		body2d.velocity = Vector2.zero;
 		float timer = 0;
 
+		Walk walk = GetComponent<Walk> ();
+
 		while(timer < jumpTime)
 		{
 			float proportionCompleted = timer / jumpTime;
-			Vector2 thisFrameJumpVector = Vector2.Lerp(new Vector2 ((float)inputState.direction * speed, jumpForce), Vector2.zero, proportionCompleted);
+			Vector2 thisFrameJumpVector = Vector2.Lerp(new Vector2 ((float)inputState.direction  * speed, jumpForce), Vector2.zero, proportionCompleted);
 			body2d.AddForce (thisFrameJumpVector);
 			timer += Time.deltaTime;
+
+			velocityX.CalculateMaxVelocity (maxVelocity);
+
+			yield return new WaitForFixedUpdate();
+		}
+
+		while (body2d.velocity.x >= walk.maxVelocity
+			|| body2d.velocity.x <= -walk.maxVelocity) {
+			velocityX.BreakVelocity ();
 
 			yield return new WaitForFixedUpdate();
 		}
