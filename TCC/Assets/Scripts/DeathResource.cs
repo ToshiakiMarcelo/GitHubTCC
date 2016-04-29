@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Death : AbstractBehavior {
+public class DeathResource : AbstractBehavior {
 
 	public GameObject deathMenu;
 

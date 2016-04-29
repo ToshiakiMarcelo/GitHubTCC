@@ -4,49 +4,50 @@ using UnityEngine.UI;
 
 public class DeathMenu : MonoBehaviour {
 
-	public GameObject deathGravityPrefab;
-	public GameObject slidePrefab;
-	public GameObject fartPrefab;
-
 	private Transform characterPosition;
-	//private Vector3 positionDesired;
 	private Image[] options;
 
 	private bool right = false;
 	private bool left = false;
 
-	private Transform respawnPoint;
+	private Death death;
 
 	void OnEnable() {
 		characterPosition = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform>();
-		respawnPoint = GameObject.FindGameObjectWithTag ("Respawn").GetComponent<Transform>();
+		death = characterPosition.GetComponent<Death> ();
 		options = GetComponentsInChildren<Image> ();
 	}
 
 	void OnDisable() {
 		bool state = false;
 
-		GameObject deathResource = null;
+//		Transform deathTarget = null;
+//
+//		GameObject deathResource = null;
 
-		if (right) deathResource = slidePrefab; //Morte Slide
-		else if (left) deathResource = fartPrefab; //Morte left//
+		DeathType deathType = DeathType.Slide;
+
+		if (right) deathType = DeathType.Slide; //Morte Slide
+		else if (left) deathType = DeathType.Fart; //Morte left//
 		else state = true;
 
-		if (deathResource) {
-			Transform gravity = Instantiate (deathGravityPrefab).transform;
+//		if (deathResource) {
+//			Transform gravity = Instantiate (deathGravityPrefab).transform;
+//
+//			deathTarget = gravity;
+//
+//			Vector3 scaleDesired = characterPosition.transform.localScale;
+//			Vector3 positionDesired = characterPosition.transform.position;
+//
+//			gravity.transform.position = positionDesired;
+//
+//			deathResource.transform.localScale = new Vector3 (scaleDesired.x, .5f, 1);
+//			deathResource.transform.position = positionDesired;
+//
+//			Instantiate (deathResource).transform.parent = gravity;
+//		}
 
-			Vector3 scaleDesired = characterPosition.transform.localScale;
-			Vector3 positionDesired = characterPosition.transform.position;
-
-			gravity.transform.position = positionDesired;
-
-			deathResource.transform.localScale = new Vector3 (scaleDesired.x, .5f, 1);
-			deathResource.transform.position = positionDesired;
-
-			Instantiate (deathResource).transform.parent = gravity;
-		}
-
-		if (!state) characterPosition.position = respawnPoint.position;
+		if (!state) death.KillCharacter (deathType);
 	}
 
 	void Update() {
