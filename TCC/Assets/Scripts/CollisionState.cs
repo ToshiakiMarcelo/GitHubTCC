@@ -19,12 +19,12 @@ public class CollisionState : MonoBehaviour {
 	public void FixedUpdate() {
 		Vector2 pos = bottomPosition;
 
-		pos.x      += transform.position.x;
-		pos.y      += transform.position.y;
+		pos.x += transform.position.x;
+		pos.y += transform.position.y;
 
 		standing = Physics2D.OverlapCircle(pos, collisionRadius, collisionLayer);
 
-		pos    = inputState.direction == Directions.Right ? rightPosition : leftPosition;
+		pos = inputState.direction == Directions.Right ? rightPosition : leftPosition;
 		pos.x += transform.position.x;
 		pos.y += transform.position.y;
 		

@@ -45,16 +45,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Death.cs" />
-     <Compile Include="Assets\EnemyShooter.cs" />
-     <Compile Include="Assets\RespawnLocation.cs" />
      <Compile Include="Assets\Scripts\AbstractBehavior.cs" />
      <Compile Include="Assets\Scripts\ActionTrigger.cs" />
+     <Compile Include="Assets\Scripts\CameraLimitController.cs" />
      <Compile Include="Assets\Scripts\CollisionState.cs" />
+     <Compile Include="Assets\Scripts\Death.cs" />
      <Compile Include="Assets\Scripts\DeathMenu.cs" />
      <Compile Include="Assets\Scripts\DeathResource.cs" />
      <Compile Include="Assets\Scripts\Do Seiji\CameraController.cs" />
      <Compile Include="Assets\Scripts\Do Seiji\PlayerMechanics.cs" />
+     <Compile Include="Assets\Scripts\EnemyShooter.cs" />
+     <Compile Include="Assets\Scripts\EnemyThorn.cs" />
      <Compile Include="Assets\Scripts\FaceDirection.cs" />
      <Compile Include="Assets\Scripts\Fart.cs" />
      <Compile Include="Assets\Scripts\Gravity.cs" />
@@ -62,12 +63,12 @@
      <Compile Include="Assets\Scripts\InputState.cs" />
      <Compile Include="Assets\Scripts\Jump.cs" />
      <Compile Include="Assets\Scripts\Respawn.cs" />
+     <Compile Include="Assets\Scripts\Shot.cs" />
      <Compile Include="Assets\Scripts\Slide.cs" />
      <Compile Include="Assets\Scripts\TesteInputs.cs" />
      <Compile Include="Assets\Scripts\VelocityXController.cs" />
      <Compile Include="Assets\Scripts\Walk.cs" />
      <Compile Include="Assets\Scripts\WallJump.cs" />
-     <Compile Include="Assets\Shot.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity_5_3_4f/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

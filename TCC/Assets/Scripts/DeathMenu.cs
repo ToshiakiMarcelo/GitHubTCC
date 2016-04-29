@@ -60,8 +60,9 @@ public class DeathMenu : MonoBehaviour {
 		rightValue = Input.GetAxis ("Horizontal") > 0 ? Input.GetAxis ("Horizontal") : 0;
 		leftValue = Input.GetAxis ("Horizontal") < 0 ? Input.GetAxis ("Horizontal") : 0;
 
-		if (Input.GetButton("Horizontal") && rightValue != 0) right = true;
-		if (Input.GetButton("Horizontal") && leftValue != 0) left = true;
+		if (Input.GetButton ("Horizontal") && rightValue != 0) right = true;
+		else if (Input.GetButton ("Horizontal") && leftValue != 0) left = true;
+		else Invoke ("TimeToCancel", 0.5f);
 
 		for (int i = 0; i < options.Length; i++) options [i].color = Color.white;
 
