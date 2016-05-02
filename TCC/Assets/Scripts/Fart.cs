@@ -22,6 +22,9 @@ public class Fart : AbstractBehavior {
 		Walk walk = GetComponent<Walk> ();
 		inputState.direction = direction == 1 ? Directions.Right : Directions.Left;
 
+		Jump jump = GetComponent<Jump> ();
+		jump.jumpsRemaining = 1;
+
 		while(timer < jumpTime)
 		{
 			Debug.Log (timer);

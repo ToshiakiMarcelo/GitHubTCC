@@ -58,14 +58,13 @@ public class EnemyShooter : MonoBehaviour {
 			shot.transform.rotation = rotationDesired;
 			shot.transform.position = positionDesired;
 
-			StartCoroutine (CreateShot(shot));
+			Instantiate (shot);
+
+			Invoke ("CooldownShot", cdShot);
 		}
 	}
 
-	IEnumerator CreateShot(GameObject shot){
-		yield return new WaitForSeconds (cdShot);
-
-		Instantiate (shot);
+	void CooldownShot(){
 		canGo = true;
 	}
 }

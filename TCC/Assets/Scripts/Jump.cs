@@ -9,11 +9,13 @@ public class Jump : AbstractBehavior {
 	public float jumpDelay = .1f;
 	public int jumpCount = 2;
 	protected float lastJumpTime = 0;
-	protected int jumpsRemaining = 0;
+	[HideInInspector] public int jumpsRemaining = 0;
 
 	protected virtual void Update () {
 		bool  canJump  = inputState.GetButtonValue(inputButtons[0]);
 		float holdTime = inputState.GetButtonHoldTime(inputButtons[0]);
+
+		WallJump wallJump = GetComponent<WallJump> ();
 
 		if (collisionState.standing) {
 			if (canJump && !jumping && holdTime == 0) {
@@ -21,7 +23,7 @@ public class Jump : AbstractBehavior {
 				StartCoroutine (JumpRoutine ());
 			}
 		} 
-		else if (!collisionState.onWall) {
+		else if ((!collisionState.onWall && wallJump.enabled) || !wallJump.enabled) {
 			if(canJump && !jumping && Time.time - lastJumpTime > jumpDelay && holdTime < .1f)
 			{
 				if (jumpsRemaining > 0) {

@@ -24,6 +24,9 @@ public class Death : MonoBehaviour {
 	void OnEnable () {
 		characterPosition = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform>();
 		respawnPoint = GameObject.FindGameObjectWithTag ("Respawn").GetComponent<Transform>();
+
+		GetComponent<Walk> ().enabled = true;
+		GetComponent<Jump> ().enabled = true;
 	}
 
 	void OnDisable () {
