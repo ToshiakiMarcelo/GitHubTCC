@@ -1,0 +1,75 @@
+
+Idle.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Boca
+  rotate: false
+  xy: 642, 886
+  size: 341, 110
+  orig: 343, 112
+  offset: 1, 1
+  index: -1
+Chifre Esquerdo
+  rotate: false
+  xy: 2, 39
+  size: 235, 301
+  orig: 237, 303
+  offset: 1, 1
+  index: -1
+Chifre Esquerdo copiar
+  rotate: false
+  xy: 239, 74
+  size: 171, 266
+  orig: 173, 268
+  offset: 1, 1
+  index: -1
+Corpo
+  rotate: false
+  xy: 2, 342
+  size: 638, 654
+  orig: 640, 656
+  offset: 1, 1
+  index: -1
+Olho Esquerdo
+  rotate: false
+  xy: 412, 196
+  size: 147, 144
+  orig: 149, 146
+  offset: 1, 1
+  index: -1
+Olho direito
+  rotate: false
+  xy: 807, 781
+  size: 102, 103
+  orig: 102, 103
+  offset: 0, 0
+  index: -1
+Perna Direita
+  rotate: false
+  xy: 642, 607
+  size: 126, 112
+  orig: 128, 114
+  offset: 1, 1
+  index: -1
+Perna Esquerda
+  rotate: false
+  xy: 642, 721
+  size: 163, 163
+  orig: 165, 165
+  offset: 1, 1
+  index: -1
+Pupila Direita
+  rotate: false
+  xy: 985, 969
+  size: 26, 27
+  orig: 28, 29
+  offset: 1, 1
+  index: -1
+Pupila Esquerda
+  rotate: false
+  xy: 2, 2
+  size: 35, 35
+  orig: 37, 37
+  offset: 1, 1
+  index: -1
