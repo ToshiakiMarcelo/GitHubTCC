@@ -50,7 +50,7 @@ public class Jump : AbstractBehavior {
 			float proportionCompleted = timer / jumpTime;
 			Vector2 thisFrameJumpVector = Vector2.Lerp(Vector2.up * jumpForce, Vector2.zero, proportionCompleted);
 			body2d.AddForce(thisFrameJumpVector);
-			timer += Time.deltaTime;
+			timer += Time.fixedDeltaTime;
 
 			yield return new WaitForFixedUpdate();
 		}
