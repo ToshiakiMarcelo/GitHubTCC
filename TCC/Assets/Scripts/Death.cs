@@ -3,7 +3,7 @@ using System.Collections;
 
 public enum DeathType {Slide, Fart, Stick, Deafult}; 
 
-public class Death : MonoBehaviour {
+public class Death : AbstractBehavior {
 
 	public GameObject deathGravityPrefab;
 	public GameObject slidePrefab;
@@ -27,6 +27,7 @@ public class Death : MonoBehaviour {
 
 		GetComponent<Walk> ().enabled = true;
 		GetComponent<Jump> ().enabled = true;
+		GetComponent<Jump>().jumping = false;
 	}
 
 	void OnDisable () {
