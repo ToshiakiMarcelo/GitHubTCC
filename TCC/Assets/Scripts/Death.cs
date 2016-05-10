@@ -39,7 +39,7 @@ public class Death : AbstractBehavior {
 
 		Transform gravity = Instantiate (deathGravityPrefab).transform;
 
-		Vector3 scaleDesired = new Vector3 (characterPosition.transform.localScale.x, .5f, 1);
+		Vector3 scaleDesired = new Vector3 (characterPosition.transform.localScale.x, 1, 1);
 		Vector3 positionDesired = characterPosition.transform.position;
 
 		gravity.transform.position = positionDesired;

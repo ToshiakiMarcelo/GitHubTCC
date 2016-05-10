@@ -15,10 +15,14 @@ public class Shot : MonoBehaviour {
 	private bool vertical;
 	private float direction;
 
+	[HideInInspector] public bool shotOutCamera;
+		
 	void Awake() {
-		direction = transform.localScale.x;
-
 		body2d = GetComponent<Rigidbody2D> ();
+	}
+
+	void Update() {
+		direction = transform.localScale.x;
 
 		if (transform.rotation.z != 0) vertical = true;
 		else vertical = false;
@@ -33,8 +37,7 @@ public class Shot : MonoBehaviour {
 			body2d.velocity = new Vector2(speed * direction, 0) * Time.deltaTime;
 			body2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
 		}
-
-		Debug.Log (body2d.velocity);
+			
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {
@@ -43,11 +46,19 @@ public class Shot : MonoBehaviour {
 
 			death.KillCharacter (deathType);
 		}
+
+		shotOutCamera = true;
+	}
+
+	void OnTriggerStay2D (Collider2D other) {
+		if (other.tag == tagCameraLimit) {
+			shotOutCamera = false;
+		}
 	}
 
 	void OnTriggerExit2D  (Collider2D other) {
 		if (other.tag == tagCameraLimit) {
-			Destroy (gameObject);
+			shotOutCamera = true;
 		}
 	}
 }

@@ -9,9 +9,18 @@ public class EnemyShooter : MonoBehaviour {
 	public float cdShot;
 
 	private bool canGo = true;
+	protected bool shotOutCamera = true;
+
+	void Update() {
+		bool shotOutCameraReference = shotPrefab.GetComponent<Shot> ().shotOutCamera;
+
+		shotOutCamera = shotOutCameraReference;
+
+		Debug.Log (shotOutCamera);
+	}
 
 	void FixedUpdate () {
-		if (canGo) {
+		if (canGo && shotOutCamera) {
 			canGo = false;
 
 			GameObject shot = shotPrefab;
@@ -58,7 +67,7 @@ public class EnemyShooter : MonoBehaviour {
 			shot.transform.rotation = rotationDesired;
 			shot.transform.position = positionDesired;
 
-			Instantiate (shot);
+			shotOutCamera = false;
 
 			Invoke ("CooldownShot", cdShot);
 		}
