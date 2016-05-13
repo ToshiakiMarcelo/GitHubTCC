@@ -47,7 +47,8 @@ public class Shot : MonoBehaviour {
 			death.KillCharacter (deathType);
 		}
 
-		shotOutCamera = true;
+		if (other.tag != "Shot" && other.tag != "Resource" ) shotOutCamera = true;
+
 	}
 
 	void OnTriggerStay2D (Collider2D other) {

@@ -25,9 +25,12 @@ public class Death : AbstractBehavior {
 		characterPosition = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform>();
 		respawnPoint = GameObject.FindGameObjectWithTag ("Respawn").GetComponent<Transform>();
 
-		GetComponent<Walk> ().enabled = true;
-		GetComponent<Jump> ().enabled = true;
+		GetComponent<Walk>().enabled = true;
+		GetComponent<Jump>().enabled = true;
 		GetComponent<Jump>().jumping = false;
+		GetComponent<Fart>().enabled = false;
+		GetComponent<Slide>().enabled = false;
+		GetComponent<WallJump>().enabled = false;
 	}
 
 	void OnDisable () {
