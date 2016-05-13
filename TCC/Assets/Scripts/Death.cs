@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public enum DeathType {Slide, Fart, Stick, Deafult}; 
 
 public class Death : AbstractBehavior {
+
+	public int maxNbResources;
 
 	public GameObject deathGravityPrefab;
 	public GameObject slidePrefab;
@@ -16,6 +19,9 @@ public class Death : AbstractBehavior {
 	private Transform respawnPoint;
 
 	private CameraController camController;
+
+	private List<GameObject> slideDeaths = new List<GameObject>();
+	private List<GameObject> fartDeaths = new List<GameObject>();
 
 	void Awake() {
 		camController = Camera.main.GetComponent<CameraController> ();
@@ -60,6 +66,8 @@ public class Death : AbstractBehavior {
 
 		Instantiate (deathResource).transform.parent = gravity;
 
+		CountDeaths (gravity.gameObject, deathType);
+
 		camController.target = deathTarget;
 	}
 
@@ -69,5 +77,26 @@ public class Death : AbstractBehavior {
 		characterPosition.position = respawnPoint.position;
 
 		camController.target = characterPosition;
+	}
+
+	void CountDeaths(GameObject deathResource, DeathType deathType) {
+		Debug.Log (deathType);
+		if (deathType == DeathType.Slide) {
+			slideDeaths.Add (deathResource);
+
+			if (slideDeaths.Count > maxNbResources) {
+				Destroy (slideDeaths [0]);
+
+				slideDeaths.RemoveAt (0);
+			}
+		} else if (deathType == DeathType.Fart) {
+			fartDeaths.Add (deathResource);
+
+			if (fartDeaths.Count > maxNbResources) {
+				Destroy(fartDeaths [0]);
+
+				fartDeaths.RemoveAt (0);
+			}
+		}
 	}
 }
