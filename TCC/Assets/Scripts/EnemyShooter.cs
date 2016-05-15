@@ -11,15 +11,21 @@ public class EnemyShooter : MonoBehaviour {
 	private bool canGo = true;
 	protected bool shotOutCamera = true;
 
+	private bool shotOutCameraReference;
+
 	void Update() {
-		bool shotOutCameraReference = shotPrefab.GetComponent<Shot> ().shotOutCamera;
+		shotOutCameraReference = shotPrefab.GetComponent<Shot> ().shotOutCamera;
 
 		shotOutCamera = shotOutCameraReference;
-
-		Debug.Log (shotOutCamera);
 	}
 
 	void FixedUpdate () {
+		if (shotOutCamera) {
+			GameObject shot = shotPrefab;
+
+			shot.transform.position = new Vector2 (-10, 0);
+		}
+
 		if (canGo && shotOutCamera) {
 			canGo = false;
 
@@ -68,6 +74,7 @@ public class EnemyShooter : MonoBehaviour {
 			shot.transform.position = positionDesired;
 
 			shotOutCamera = false;
+			shotPrefab.GetComponent<Shot> ().shotOutCamera = false;
 
 			Invoke ("CooldownShot", cdShot);
 		}

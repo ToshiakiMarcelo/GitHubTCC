@@ -40,6 +40,12 @@ public class Shot : MonoBehaviour {
 			
 	}
 
+//	void OnTriggerStay2D (Collider2D other) {
+//		if (other.tag == tagCameraLimit) {
+//			shotOutCamera = false;
+//		}
+//	}
+
 	void OnTriggerEnter2D (Collider2D other) {
 		if (other.tag == tagPlayer) {
 			Death death = other.GetComponent<Death> ();
@@ -47,19 +53,12 @@ public class Shot : MonoBehaviour {
 			death.KillCharacter (deathType);
 		}
 
-		if (other.tag != "Shot" && other.tag != "Resource" ) shotOutCamera = true;
-
-	}
-
-	void OnTriggerStay2D (Collider2D other) {
-		if (other.tag == tagCameraLimit) {
-			shotOutCamera = false;
-		}
+		if (other.tag != tagCameraLimit) shotOutCamera = true;
 	}
 
 	void OnTriggerExit2D  (Collider2D other) {
 		if (other.tag == tagCameraLimit) {
 			shotOutCamera = true;
-		}
+		} 
 	}
 }
