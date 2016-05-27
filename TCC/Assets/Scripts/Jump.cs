@@ -29,7 +29,7 @@ public class Jump : AbstractBehavior {
 				if (jumpsRemaining > 0) {
 					jumpsRemaining--;
 					StartCoroutine(JumpRoutine());
-					Debug.Log ("DoubleJump");
+
 				}
 
 			}
