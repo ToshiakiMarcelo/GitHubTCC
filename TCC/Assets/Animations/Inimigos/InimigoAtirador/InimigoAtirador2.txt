@@ -1,0 +1,166 @@
+
+InimigoAtirador2.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Boca Frente
+  rotate: true
+  xy: 2151, 385
+  size: 227, 817
+  orig: 229, 819
+  offset: 1, 1
+  index: -1
+Boca Tras
+  rotate: true
+  xy: 3141, 608
+  size: 414, 825
+  orig: 416, 827
+  offset: 1, 1
+  index: -1
+Dente 1
+  rotate: false
+  xy: 2801, 146
+  size: 182, 237
+  orig: 184, 239
+  offset: 1, 1
+  index: -1
+Dente 10
+  rotate: true
+  xy: 2970, 437
+  size: 175, 145
+  orig: 177, 147
+  offset: 1, 1
+  index: -1
+Dente 11
+  rotate: false
+  xy: 3220, 457
+  size: 100, 149
+  orig: 102, 151
+  offset: 1, 1
+  index: -1
+Dente 12
+  rotate: true
+  xy: 3968, 615
+  size: 169, 82
+  orig: 171, 84
+  offset: 1, 1
+  index: -1
+Dente 2
+  rotate: true
+  xy: 2949, 2
+  size: 142, 143
+  orig: 144, 145
+  offset: 1, 1
+  index: -1
+Dente 3
+  rotate: false
+  xy: 1388, 81
+  size: 287, 166
+  orig: 289, 168
+  offset: 1, 1
+  index: -1
+Dente 4
+  rotate: false
+  xy: 1872, 127
+  size: 151, 120
+  orig: 153, 122
+  offset: 1, 1
+  index: -1
+Dente 5
+  rotate: false
+  xy: 3322, 460
+  size: 100, 146
+  orig: 102, 148
+  offset: 1, 1
+  index: -1
+Dente 6
+  rotate: true
+  xy: 3968, 786
+  size: 236, 88
+  orig: 238, 90
+  offset: 1, 1
+  index: -1
+Dente 7
+  rotate: false
+  xy: 3117, 451
+  size: 101, 155
+  orig: 103, 157
+  offset: 1, 1
+  index: -1
+Dente 8
+  rotate: true
+  xy: 1677, 70
+  size: 177, 193
+  orig: 179, 195
+  offset: 1, 1
+  index: -1
+Dente 9
+  rotate: true
+  xy: 2801, 2
+  size: 142, 146
+  orig: 144, 148
+  offset: 1, 1
+  index: -1
+Mucosa
+  rotate: true
+  xy: 1388, 249
+  size: 363, 761
+  orig: 365, 763
+  offset: 1, 1
+  index: -1
+Olho Frente
+  rotate: true
+  xy: 2151, 52
+  size: 331, 345
+  orig: 333, 347
+  offset: 1, 1
+  index: -1
+Olho Tras
+  rotate: false
+  xy: 2498, 116
+  size: 301, 267
+  orig: 303, 269
+  offset: 1, 1
+  index: -1
+Parte 2 copiar
+  rotate: true
+  xy: 2, 31
+  size: 599, 1384
+  orig: 601, 1386
+  offset: 1, 1
+  index: -1
+Parte 3 copiar
+  rotate: true
+  xy: 1641, 614
+  size: 408, 1498
+  orig: 410, 1500
+  offset: 1, 1
+  index: -1
+Parte 4 copiar
+  rotate: true
+  xy: 2, 632
+  size: 390, 1637
+  orig: 392, 1639
+  offset: 1, 1
+  index: -1
+Pupila Frente
+  rotate: false
+  xy: 2498, 57
+  size: 57, 57
+  orig: 59, 59
+  offset: 1, 1
+  index: -1
+Pupila Tras
+  rotate: false
+  xy: 3424, 550
+  size: 56, 56
+  orig: 58, 58
+  offset: 1, 1
+  index: -1
+dente 13
+  rotate: false
+  xy: 2025, 163
+  size: 117, 84
+  orig: 119, 86
+  offset: 1, 1
+  index: -1

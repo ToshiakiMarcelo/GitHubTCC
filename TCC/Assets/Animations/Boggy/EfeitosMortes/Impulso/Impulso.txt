@@ -1,0 +1,61 @@
+
+Impulso.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bundinha Tras
+  rotate: false
+  xy: 1058, 120
+  size: 349, 348
+  orig: 351, 350
+  offset: 1, 1
+  index: -1
+Bundinha frente
+  rotate: false
+  xy: 674, 61
+  size: 382, 407
+  orig: 384, 409
+  offset: 1, 1
+  index: -1
+Chifre Direito
+  rotate: true
+  xy: 1757, 16
+  size: 295, 165
+  orig: 297, 167
+  offset: 1, 1
+  index: -1
+Chifre Esquerdo
+  rotate: false
+  xy: 1409, 275
+  size: 346, 193
+  orig: 348, 195
+  offset: 1, 1
+  index: -1
+Corpinho
+  rotate: false
+  xy: 2, 3
+  size: 670, 465
+  orig: 672, 467
+  offset: 1, 1
+  index: -1
+Perna Frente
+  rotate: false
+  xy: 1409, 112
+  size: 316, 161
+  orig: 318, 163
+  offset: 1, 1
+  index: -1
+Perna Tras
+  rotate: false
+  xy: 1757, 313
+  size: 229, 155
+  orig: 231, 157
+  offset: 1, 1
+  index: -1
+fart-on-shake-38230
+  rotate: false
+  xy: 1058, 2
+  size: 167, 116
+  orig: 170, 170
+  offset: 1, 27
+  index: -1

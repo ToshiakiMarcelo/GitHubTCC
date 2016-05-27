@@ -1,0 +1,103 @@
+
+Velocidade.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Boca
+  rotate: false
+  xy: 450, 117
+  size: 267, 144
+  orig: 269, 146
+  offset: 1, 1
+  index: -1
+Bundinha
+  rotate: false
+  xy: 1639, 383
+  size: 99, 121
+  orig: 101, 123
+  offset: 1, 1
+  index: -1
+Chifre Direito
+  rotate: true
+  xy: 1025, 370
+  size: 134, 218
+  orig: 136, 220
+  offset: 1, 1
+  index: -1
+Chifre Esquerdo
+  rotate: true
+  xy: 792, 329
+  size: 175, 231
+  orig: 177, 233
+  offset: 1, 1
+  index: -1
+Corpinho
+  rotate: false
+  xy: 2, 2
+  size: 446, 502
+  orig: 448, 504
+  offset: 1, 1
+  index: -1
+D
+  rotate: false
+  xy: 450, 363
+  size: 340, 141
+  orig: 342, 143
+  offset: 1, 1
+  index: -1
+I
+  rotate: false
+  xy: 450, 263
+  size: 317, 98
+  orig: 319, 100
+  offset: 1, 1
+  index: -1
+O
+  rotate: false
+  xy: 1245, 370
+  size: 207, 134
+  orig: 209, 136
+  offset: 1, 1
+  index: -1
+Olho Direito
+  rotate: true
+  xy: 607, 55
+  size: 60, 92
+  orig: 62, 94
+  offset: 1, 1
+  index: -1
+Olho Esquerdo
+  rotate: false
+  xy: 1740, 393
+  size: 77, 111
+  orig: 79, 113
+  offset: 1, 1
+  index: -1
+Perna Direita
+  rotate: false
+  xy: 450, 28
+  size: 155, 87
+  orig: 157, 89
+  offset: 1, 1
+  index: -1
+Perna esquerda
+  rotate: false
+  xy: 1454, 377
+  size: 183, 127
+  orig: 185, 129
+  offset: 1, 1
+  index: -1
+Pupila Direita
+  rotate: false
+  xy: 769, 347
+  size: 15, 14
+  orig: 17, 16
+  offset: 1, 1
+  index: -1
+Pupila Esquerda
+  rotate: false
+  xy: 719, 244
+  size: 18, 17
+  orig: 20, 19
+  offset: 1, 1
+  index: -1

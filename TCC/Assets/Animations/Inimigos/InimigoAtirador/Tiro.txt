@@ -1,0 +1,12 @@
+
+Tiro.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bola
+  rotate: false
+  xy: 2, 2
+  size: 1844, 1844
+  orig: 1844, 1844
+  offset: 0, 0
+  index: -1
