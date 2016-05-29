@@ -5,7 +5,6 @@ public class VelocityXController : AbstractBehavior {
 	public float breakVelocityValue = 2.5f; //15
 	private Directions velocityDirection;
 	public void Update() {
-		Debug.Log (body2d.velocity.x);
 		if (body2d.velocity.x > .001f)
 			velocityDirection = Directions.Right;
 		else if (body2d.velocity.x < - .001f)
@@ -21,11 +20,9 @@ public class VelocityXController : AbstractBehavior {
 	public void BreakVelocity() {
 		if (velocityDirection == Directions.Right) {
 			if (body2d.velocity.x > 0){
-				Debug.Log ("first");
 				body2d.velocity -= new Vector2 (Mathf.Clamp(body2d.velocity.x, 0, breakVelocityValue * Time.deltaTime), 0);
 				}
 			else{
-				Debug.Log ("second");
 				body2d.velocity = Vector2.up * body2d.velocity.y;
 			}
 		}

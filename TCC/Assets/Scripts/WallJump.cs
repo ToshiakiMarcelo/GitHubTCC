@@ -17,7 +17,8 @@ public class WallJump : AbstractBehavior {
 			Jump jump = GetComponent<Jump> ();
 
 			if (canJump && !jumpingOffWall && holdTime == 0) {
-				jump.jumpsRemaining = 0;
+				Debug.Log ("WallJUmP");
+				jump.jumpsRemaining = 1;
 				ToggleScripts (false);
 				inputState.direction = inputState.direction == Directions.Right ? Directions.Left : Directions.Right;
 				StartCoroutine (JumpWallRoutine());

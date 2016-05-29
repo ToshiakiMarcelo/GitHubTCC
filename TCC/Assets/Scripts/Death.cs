@@ -11,6 +11,7 @@ public class Death : AbstractBehavior {
 	public GameObject deathGravityPrefab;
 	public GameObject slidePrefab;
 	public GameObject fartPrefab;
+	public GameObject stickPrefab;
 	public GameObject defaultPrefab;
 
 	public float timeToRespawn;
@@ -59,6 +60,7 @@ public class Death : AbstractBehavior {
 
 		if (deathType == DeathType.Slide) deathResource = slidePrefab; //Morte Slide
 		else if (deathType == DeathType.Fart) deathResource = fartPrefab; //Morte left//
+		else if (deathType == DeathType.Stick) deathResource = stickPrefab;
 		else deathResource = defaultPrefab;
 
 		deathResource.transform.localScale = scaleDesired;
