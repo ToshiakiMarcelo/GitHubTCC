@@ -5,57 +5,57 @@ filter: Linear,Linear
 repeat: none
 Bundinha Tras
   rotate: false
-  xy: 1058, 120
+  xy: 1058, 159
   size: 349, 348
   orig: 351, 350
   offset: 1, 1
   index: -1
 Bundinha frente
   rotate: false
-  xy: 674, 61
+  xy: 674, 100
   size: 382, 407
   orig: 384, 409
   offset: 1, 1
   index: -1
 Chifre Direito
-  rotate: true
-  xy: 1757, 16
+  rotate: false
+  xy: 1727, 131
   size: 295, 165
   orig: 297, 167
   offset: 1, 1
   index: -1
 Chifre Esquerdo
   rotate: false
-  xy: 1409, 275
+  xy: 1409, 314
   size: 346, 193
   orig: 348, 195
   offset: 1, 1
   index: -1
 Corpinho
   rotate: false
-  xy: 2, 3
+  xy: 2, 42
   size: 670, 465
   orig: 672, 467
   offset: 1, 1
   index: -1
 Perna Frente
   rotate: false
-  xy: 1409, 112
+  xy: 1409, 151
   size: 316, 161
   orig: 318, 163
   offset: 1, 1
   index: -1
 Perna Tras
   rotate: false
-  xy: 1757, 313
+  xy: 1058, 2
   size: 229, 155
   orig: 231, 157
   offset: 1, 1
   index: -1
 fart-on-shake-38230
   rotate: false
-  xy: 1058, 2
-  size: 167, 116
-  orig: 170, 170
-  offset: 1, 27
+  xy: 1757, 298
+  size: 252, 209
+  orig: 252, 209
+  offset: 0, 0
   index: -1
