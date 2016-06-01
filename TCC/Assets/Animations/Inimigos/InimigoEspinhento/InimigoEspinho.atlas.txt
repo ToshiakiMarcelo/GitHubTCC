@@ -5,105 +5,105 @@ filter: Linear,Linear
 repeat: none
 Boca
   rotate: false
-  xy: 2, 87
+  xy: 2, 577
   size: 543, 118
   orig: 545, 120
   offset: 1, 1
   index: -1
 Corpo
   rotate: false
-  xy: 2, 207
+  xy: 2, 697
   size: 1489, 282
   orig: 1491, 284
   offset: 1, 1
   index: -1
 Dente Frente Esquerda
   rotate: false
-  xy: 2462, 263
+  xy: 2, 20
   size: 177, 226
   orig: 179, 228
   offset: 1, 1
   index: -1
 Dente Frente Esquerda copiar
   rotate: false
-  xy: 2641, 263
+  xy: 1813, 753
   size: 177, 226
   orig: 179, 228
   offset: 1, 1
   index: -1
 Dente Meio
-  rotate: true
-  xy: 2820, 355
+  rotate: false
+  xy: 181, 2
   size: 134, 244
   orig: 136, 246
   offset: 1, 1
   index: -1
 Dente Meio copiar
-  rotate: true
-  xy: 3066, 355
+  rotate: false
+  xy: 317, 11
   size: 134, 244
   orig: 136, 246
   offset: 1, 1
   index: -1
 Dente tras
   rotate: true
-  xy: 2, 2
+  xy: 547, 612
   size: 83, 177
   orig: 85, 179
   offset: 1, 1
   index: -1
 Dente tras copiar
   rotate: true
-  xy: 547, 122
+  xy: 726, 612
   size: 83, 177
   orig: 85, 179
   offset: 1, 1
   index: -1
 Língua 1
   rotate: true
-  xy: 1822, 182
+  xy: 1493, 672
   size: 307, 318
   orig: 309, 320
   offset: 1, 1
   index: -1
 Língua 2
-  rotate: true
-  xy: 1493, 190
+  rotate: false
+  xy: 2, 248
   size: 299, 327
   orig: 301, 329
   offset: 1, 1
   index: -1
 Língua 3
-  rotate: true
-  xy: 2142, 182
+  rotate: false
+  xy: 303, 257
   size: 307, 318
   orig: 309, 320
   offset: 1, 1
   index: -1
 Olho Tras
   rotate: false
-  xy: 2462, 214
+  xy: 1813, 704
   size: 107, 47
   orig: 109, 49
   offset: 1, 1
   index: -1
 Olho frente
-  rotate: false
-  xy: 3312, 367
+  rotate: true
+  xy: 453, 47
   size: 208, 122
   orig: 210, 124
   offset: 1, 1
   index: -1
 Pupila Frente
   rotate: false
-  xy: 2820, 325
+  xy: 1992, 951
   size: 35, 28
   orig: 37, 30
   offset: 1, 1
   index: -1
 Pupila Tras
   rotate: false
-  xy: 3312, 355
+  xy: 2, 8
   size: 23, 10
   orig: 25, 12
   offset: 1, 1
