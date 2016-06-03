@@ -7,12 +7,10 @@ public class CameraControllerV2 : MonoBehaviour {
 	private Vector3 max;
 	public  Transform target;
 	public  Transform finalDaFase;
-	public  float debugVar;
-	public  float debugVar2;
-	public  float distX;
-	public  float distY;
-	public  float distX2;
-	public  float distY2;
+	private float distX;
+	private float distY;
+	private float distX2;
+	private float distY2;
 	public  float offsetX;
 	public  float offsetY;
 	public  bool canSmooth;
@@ -38,7 +36,6 @@ public class CameraControllerV2 : MonoBehaviour {
 		float x = transform.position.x;
 		float y = transform.position.y;
 
-//		dist = Vector3.Distance(finalDaFase.position, target.position);
 		distX = finalDaFase.position.x - target.position.x;
 		distY = finalDaFase.position.y - target.position.y;
 
@@ -48,9 +45,7 @@ public class CameraControllerV2 : MonoBehaviour {
 		offsetX = Mathf.Clamp(distX2, 0, 6f);
 		offsetY = Mathf.Clamp(distY2, -1f, 1);
 
-		debugVar = ((distX*0.275f) - 6);
-
-//		camera.orthographicSize = (distX);
+		camera.orthographicSize = Mathf.Clamp( (((distX*-0.1f) + 8)), 5.5f, 6);
 
 		if (IsFollowing) {
 			if (Mathf.Abs(x - target.position.x) > 0) {
