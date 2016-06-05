@@ -47,8 +47,22 @@ Perna Direita
   index: -1
 Perna Esquerda
   rotate: false
-  xy: 1647, 783
+  xy: 1357, 594
   size: 259, 175
   orig: 261, 177
   offset: 1, 1
+  index: -1
+gotaMeleca
+  rotate: true
+  xy: 1647, 790
+  size: 168, 290
+  orig: 168, 290
+  offset: 0, 0
+  index: -1
+gotaMeleca2
+  rotate: false
+  xy: 1333, 584
+  size: 22, 50
+  orig: 22, 50
+  offset: 0, 0
   index: -1

@@ -5,28 +5,28 @@ filter: Linear,Linear
 repeat: none
 Boca
   rotate: false
-  xy: 2, 231
+  xy: 620, 878
   size: 267, 144
   orig: 269, 146
   offset: 1, 1
   index: -1
 Bundinha
-  rotate: false
-  xy: 344, 397
+  rotate: true
+  xy: 321, 262
   size: 99, 121
   orig: 101, 123
   offset: 1, 1
   index: -1
 Chifre Direito
-  rotate: false
-  xy: 2, 11
+  rotate: true
+  xy: 620, 742
   size: 134, 218
   orig: 136, 220
   offset: 1, 1
   index: -1
 Chifre Esquerdo
   rotate: false
-  xy: 450, 691
+  xy: 2, 44
   size: 175, 231
   orig: 177, 233
   offset: 1, 1
@@ -47,134 +47,148 @@ D
   index: -1
 I
   rotate: false
-  xy: 450, 924
+  xy: 2, 277
   size: 317, 98
   orig: 319, 100
   offset: 1, 1
   index: -1
 O
   rotate: true
-  xy: 627, 715
+  xy: 450, 523
   size: 207, 134
   orig: 209, 136
   offset: 1, 1
   index: -1
 Olho Direito
   rotate: false
-  xy: 563, 508
+  xy: 732, 648
   size: 60, 92
   orig: 62, 94
   offset: 1, 1
   index: -1
 Olho Direito Pisco 1
   rotate: false
-  xy: 138, 22
+  xy: 840, 854
   size: 31, 22
   orig: 33, 24
   offset: 1, 1
   index: -1
 Olho Direito Pisco 2
-  rotate: true
-  xy: 267, 2
+  rotate: false
+  xy: 2, 2
   size: 45, 40
   orig: 47, 42
   offset: 1, 1
   index: -1
 Olho Direito Pisco 3
   rotate: false
-  xy: 722, 654
+  xy: 740, 587
   size: 55, 59
   orig: 57, 61
   offset: 1, 1
   index: -1
 Olho Direito Pisco 4
-  rotate: false
-  xy: 267, 49
+  rotate: true
+  xy: 653, 524
   size: 57, 73
   orig: 59, 75
   offset: 1, 1
   index: -1
 Olho Direito Pisco 5
   rotate: false
-  xy: 267, 124
+  xy: 794, 658
   size: 53, 82
   orig: 55, 84
   offset: 1, 1
   index: -1
 Olho Esquerdo
-  rotate: true
-  xy: 450, 523
+  rotate: false
+  xy: 586, 619
   size: 77, 111
   orig: 79, 113
   offset: 1, 1
   index: -1
 Olho Esquerdo Pisco 1
-  rotate: true
-  xy: 992, 978
+  rotate: false
+  xy: 49, 20
   size: 44, 22
   orig: 46, 24
   offset: 1, 1
   index: -1
 Olho Esquerdo Pisco 2
   rotate: true
-  xy: 322, 152
+  xy: 797, 602
   size: 54, 48
   orig: 56, 50
   offset: 1, 1
   index: -1
 Olho Esquerdo Pisco 3
   rotate: true
-  xy: 271, 208
+  xy: 665, 583
   size: 62, 73
   orig: 64, 75
   offset: 1, 1
   index: -1
 Olho Esquerdo Pisco 4
-  rotate: true
-  xy: 627, 648
+  rotate: false
+  xy: 665, 647
   size: 65, 93
   orig: 67, 95
   offset: 1, 1
   index: -1
 Olho Esquerdo Pisco 5
   rotate: false
-  xy: 271, 272
+  xy: 586, 514
   size: 65, 103
   orig: 67, 105
   offset: 1, 1
   index: -1
 Perna Direita
-  rotate: false
-  xy: 450, 602
+  rotate: true
+  xy: 344, 363
   size: 155, 87
   orig: 157, 89
   offset: 1, 1
   index: -1
 Perna esquerda
   rotate: true
-  xy: 138, 46
+  xy: 889, 839
   size: 183, 127
   orig: 185, 129
   offset: 1, 1
   index: -1
 Pupila Direita
-  rotate: false
-  xy: 344, 381
+  rotate: true
+  xy: 873, 861
   size: 15, 14
   orig: 17, 16
   offset: 1, 1
   index: -1
 Pupila Esquerda
   rotate: false
-  xy: 607, 672
+  xy: 272, 207
   size: 18, 17
   orig: 20, 19
   offset: 1, 1
   index: -1
 []
-  rotate: false
-  xy: 769, 931
+  rotate: true
+  xy: 179, 54
   size: 221, 91
   orig: 223, 93
   offset: 1, 1
+  index: -1
+gotaSangue
+  rotate: false
+  xy: 450, 732
+  size: 168, 290
+  orig: 168, 290
+  offset: 0, 0
+  index: -1
+gotaSangue2
+  rotate: false
+  xy: 272, 226
+  size: 22, 49
+  orig: 22, 49
+  offset: 0, 0
   index: -1
