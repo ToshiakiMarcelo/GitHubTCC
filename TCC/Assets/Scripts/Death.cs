@@ -19,13 +19,13 @@ public class Death : AbstractBehavior {
 	private Transform characterPosition;
 	private Transform respawnPoint;
 
-	private CameraControllerV2 camController;
+	private CameraControllerV3 camController;
 
 	private List<GameObject> slideDeaths = new List<GameObject>();
 	private List<GameObject> fartDeaths = new List<GameObject>();
 
 	void Awake() {
-		camController = Camera.main.GetComponent<CameraControllerV2> ();
+		camController = Camera.main.GetComponent<CameraControllerV3> ();
 	}
 
 	void OnEnable () {

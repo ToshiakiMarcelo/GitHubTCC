@@ -18,25 +18,36 @@ public class AnimationController : MonoBehaviour {
 		jump = GetComponentInParent<Jump> ();
 	}
 
+	void Start () {
+		skeletonAnimation.state.Complete += delegate(Spine.AnimationState state, int trackIndex, int loopCount) {
+//			Debug.Log(string.Format("anim {0} on track {1} completed its full duration. it looped {2} times", state, trackIndex, loopCount));
+//			if (skeletonAnimation.state.ToString () == "Pouso") ChangeAnimationState("Idle");
+		};
+
+		skeletonAnimation.state.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e) {
+//			Debug.Log(string.Format("anim {0} has endennded", state));
+//			if (skeletonAnimation.state.ToString () == "Pouso") ChangeAnimationState("Idle");
+		};
+	}
+
 	void Update () {
-		
-
-
-
 		if (body2d.velocity.y > 0 && jump.jumpsRemaining == 1) {
 			if (skeletonAnimation.state.ToString () != "Pulo") ChangeAnimationState("Pulo");
 		}
 		else if (body2d.velocity.y > 0 && jump.jumpsRemaining == 0) {
-			if (skeletonAnimation.state.ToString () != "PuloDuplo2") ChangeAnimationState("PuloDuplo2");
+			if (skeletonAnimation.state.ToString () != "Pulo Duplo") ChangeAnimationState("Pulo Duplo");
 		}
 		else if (body2d.velocity.y < 0) {
-			if (skeletonAnimation.state.ToString () != "PuloQueda") ChangeAnimationState("PuloQueda");
+			if (skeletonAnimation.state.ToString () != "Pulo Queda") ChangeAnimationState("Pulo Queda");
 		}
 		else if (inputState.absVelX > 0) {
 			if (skeletonAnimation.state.ToString () != "Walk") ChangeAnimationState("Walk");
 		}
 		else if (collisionState.standing) {
-			if (skeletonAnimation.state.ToString () != "Idle") ChangeAnimationState ("Idle");
+			if (skeletonAnimation.state.ToString () == "Pulo Queda") skeletonAnimation.state.SetAnimation (0, "Pouso", false);
+			else if (skeletonAnimation.state.ToString () == "Pouso") skeletonAnimation.state.AddAnimation (0, "Idle", true, 0f);
+			else if (skeletonAnimation.state.ToString () != "Idle") ChangeAnimationState ("Idle");
+//			if (skeletonAnimation.state.ToString () != "Idle") ChangeAnimationState ("Idle");
 		}
 	}
 

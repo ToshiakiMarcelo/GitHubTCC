@@ -1,9 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Do Seiji\Parallax.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AnimationController.cs">
     <Files>
-      <File FileName="Assets\Scripts\Do Seiji\Parallax.cs" Line="16" Column="21" />
-      <File FileName="Assets\Scripts\Do Seiji\CameraControllerV2.cs" Line="48" Column="74" />
+      <File FileName="Assets\AnimationController.cs" Line="47" Column="100" />
+      <File FileName="..\..\AnimaçõesTCC_Demo\Assets\BoggyAnimMnager.cs" Line="25" Column="28" />
+      <File FileName="Assets\Scripts\Do Seiji\CameraControllerV3.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Do Seiji\Parallax.cs" Line="46" Column="151" />
+      <File FileName="Assets\Scripts\Death.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FaceDirection.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\InputState.cs" Line="10" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
