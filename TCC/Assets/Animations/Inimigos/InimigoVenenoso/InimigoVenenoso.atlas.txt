@@ -5,169 +5,183 @@ filter: Linear,Linear
 repeat: none
 Brilho
   rotate: false
-  xy: 1921, 1086
+  xy: 1921, 1073
   size: 568, 407
   orig: 570, 409
   offset: 1, 1
   index: -1
 Camada 4 copiar 10
   rotate: false
-  xy: 2624, 1230
+  xy: 2624, 1217
   size: 488, 381
   orig: 490, 383
   offset: 1, 1
   index: -1
 Camada 4 copiar 11
   rotate: true
-  xy: 2095, 227
+  xy: 2095, 214
   size: 322, 251
   orig: 324, 253
   offset: 1, 1
   index: -1
 Camada 4 copiar 12
   rotate: false
-  xy: 1859, 551
+  xy: 1859, 538
   size: 430, 335
   orig: 432, 337
   offset: 1, 1
   index: -1
 Camada 4 copiar 13
   rotate: false
-  xy: 1001, 2
+  xy: 2095, 14
   size: 256, 198
   orig: 258, 200
   offset: 1, 1
   index: -1
 Camada 4 copiar 14
   rotate: false
-  xy: 2095, 27
+  xy: 2353, 52
   size: 256, 198
   orig: 258, 200
   offset: 1, 1
   index: -1
 Camada 4 copiar 15
   rotate: true
-  xy: 2348, 265
+  xy: 2348, 252
   size: 309, 265
   orig: 311, 267
   offset: 1, 1
   index: -1
 Camada 4 copiar 2
   rotate: false
-  xy: 1921, 1495
+  xy: 1921, 1482
   size: 701, 547
   orig: 703, 549
   offset: 1, 1
   index: -1
 Camada 4 copiar 3
   rotate: true
-  xy: 1432, 468
+  xy: 1432, 455
   size: 544, 425
   orig: 546, 427
   offset: 1, 1
   index: -1
 Camada 4 copiar 4
   rotate: false
-  xy: 1432, 105
+  xy: 1432, 92
   size: 463, 361
   orig: 465, 363
   offset: 1, 1
   index: -1
 Camada 4 copiar 5
   rotate: false
-  xy: 3431, 1132
+  xy: 3431, 1119
   size: 472, 368
   orig: 474, 370
   offset: 1, 1
   index: -1
 Camada 4 copiar 9
   rotate: false
-  xy: 3431, 1132
+  xy: 3431, 1119
   size: 472, 368
   orig: 474, 370
   offset: 1, 1
   index: -1
 Camada 4 copiar 6
   rotate: true
-  xy: 2491, 1328
+  xy: 2491, 1315
   size: 165, 131
   orig: 167, 133
   offset: 1, 1
   index: -1
 Camada 4 copiar 7
   rotate: true
-  xy: 3114, 1207
+  xy: 3114, 1194
   size: 404, 315
   orig: 406, 317
   offset: 1, 1
   index: -1
 Camada 4 copiar 8
   rotate: true
-  xy: 2291, 576
+  xy: 2291, 563
   size: 310, 243
   orig: 312, 245
   offset: 1, 1
   index: -1
 Camada 5
   rotate: false
-  xy: 2, 1014
+  xy: 2, 1001
   size: 1917, 1028
   orig: 1919, 1030
   offset: 1, 1
   index: -1
 Cilios Frente D
   rotate: false
-  xy: 1001, 202
+  xy: 1001, 189
   size: 429, 810
   orig: 431, 812
   offset: 1, 1
   index: -1
 Cilios Frente E
   rotate: true
-  xy: 2624, 1613
+  xy: 2624, 1600
   size: 429, 810
   orig: 431, 812
   offset: 1, 1
   index: -1
 Cilios Meio D
   rotate: true
-  xy: 3436, 1773
+  xy: 3436, 1760
   size: 269, 637
   orig: 271, 639
   offset: 1, 1
   index: -1
 Cilios Meio E
   rotate: true
-  xy: 3436, 1502
+  xy: 3436, 1489
   size: 269, 637
   orig: 271, 639
   offset: 1, 1
   index: -1
 Cilios Tras D
   rotate: true
-  xy: 1921, 888
+  xy: 1921, 875
   size: 196, 438
   orig: 198, 440
   offset: 1, 1
   index: -1
 Cilios Tras E
   rotate: false
-  xy: 1897, 111
+  xy: 1897, 98
   size: 196, 438
   orig: 198, 440
   offset: 1, 1
   index: -1
 Olho
   rotate: false
-  xy: 2, 15
+  xy: 2, 2
   size: 997, 997
   orig: 999, 999
   offset: 1, 1
   index: -1
 Pupila 3
   rotate: true
-  xy: 3905, 1316
+  xy: 3905, 1303
   size: 184, 119
   orig: 186, 121
   offset: 1, 1
+  index: -1
+gotaMeleca
+  rotate: true
+  xy: 1001, 19
+  size: 168, 290
+  orig: 168, 290
+  offset: 0, 0
+  index: -1
+gotaMeleca2
+  rotate: false
+  xy: 1859, 949
+  size: 22, 50
+  orig: 22, 50
+  offset: 0, 0
   index: -1

@@ -38,10 +38,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files/Unity_5.3.4f1/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity_5.3.4f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -70,7 +70,6 @@
      <None Include="Assets\Animations\spine-unity\Assets\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\Examples\Spine\Eyes\eyes.atlas.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\spine-unity\Shaders\HiddenPass.shader" />
-     <None Include="Assets\Animations\Inimigos\InimigoVenenoso\InimigoVenenoso.atlas.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\Examples\Spine\Gauge\Gauge.atlas.txt" />
      <None Include="Assets\Animations\Boggy\EfeitosMortes\Impulso\Impulso.atlas.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\Examples\Spine\FootSoldier\FS_White.atlas.txt" />
@@ -81,50 +80,51 @@
      <None Include="Assets\Animations\spine-unity\Assets\Examples\Spine\Hero\license.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\Examples\Spine\Raptor\raptor.atlas.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\Examples\Spine\Spineboy\spineboy.atlas.txt" />
-     <None Include="Assets\Animations\Boggy\EfeitosMortes\Deslize\Velocidade.atlas.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\Examples\Spine\FootSoldier\license.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\Examples\Spine\Raggedy Spineboy\Raggedy Spineboy.atlas.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\spine-unity\Shaders\Bones.shader" />
      <None Include="Assets\Animations\spine-unity\Assets\spine-unity\Modules\Ghost\Shaders\SkeletonGhost.shader" />
-     <None Include="Assets\Animations\Boggy\EfeitosMortes\Grude\Grude.atlas.txt" />
+     <None Include="Assets\Animations\Inimigos\InimigoVenenoso\InimigoVenenoso.atlas.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\Examples\Spine\Dragon\dragon.atlas.txt" />
      <None Include="Assets\Animations\Inimigos\InimigoEspinhento\InimigoEspinho.atlas.txt" />
+     <None Include="Assets\Animations\Boggy\EfeitosMortes\Deslize\Velocidade.atlas.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\Shaders\SkeletonGraphic.shader" />
      <None Include="Assets\Animations\spine-unity\Assets\spine-unity\Shaders\Skeleton.shader" />
+     <None Include="Assets\Animations\Boggy\EfeitosMortes\Grude\Grude.atlas.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\Examples\Spine\Goblins\goblins-mesh.atlas.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\Examples\Spine\Spineunitygirl\Doi.atlas.txt" />
      <None Include="Assets\Animations\Inimigos\InimigoAtirador\InimigoAtirador.atlas.txt" />
      <None Include="Assets\Animations\spine-unity\Assets\spine-unity\Shaders\SkeletonLit.shader" />
      <None Include="Assets\Animations\spine-unity\Assets\Examples\Spine\FootSoldier\Equipment\Equipment.atlas.txt" />
  <Reference Include="UnityEditor.Advertisements">
- <HintPath>C:/Program Files/Unity_5.3.4f1/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Program Files/Unity_5.3.4f1/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.EditorTestsRunner">
- <HintPath>C:/Program Files/Unity_5.3.4f1/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity_5.3.4f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Program Files/Unity_5.3.4f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity_5.3.4f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Networking">
- <HintPath>C:/Program Files/Unity_5.3.4f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TreeEditor">
- <HintPath>C:/Program Files/Unity_5.3.4f1/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
- <HintPath>C:/Program Files/Unity_5.3.4f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
- <HintPath>C:/Program Files/Unity_5.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
