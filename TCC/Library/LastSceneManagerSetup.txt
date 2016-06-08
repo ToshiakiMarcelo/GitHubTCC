@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Do Duvino/Levels/Level 1-10.unity
+- path: Assets/Scenes/Do Seiji/MenuDoSeiji.unity
   isLoaded: 1
   isActive: 1

@@ -41,7 +41,9 @@ public class AnimationController : MonoBehaviour {
 			if (skeletonAnimation.state.ToString () != "Pulo Queda") ChangeAnimationState("Pulo Queda");
 		}
 		else if (inputState.absVelX > 0) {
-			if (skeletonAnimation.state.ToString () != "Walk") ChangeAnimationState("Walk");
+			if (skeletonAnimation.state.ToString () == "Pulo Queda") skeletonAnimation.state.SetAnimation (0, "Pouso", false);
+			else if (skeletonAnimation.state.ToString () == "Pouso") skeletonAnimation.state.AddAnimation (0, "Walk", true, 0f);
+			else if (skeletonAnimation.state.ToString () != "Walk") ChangeAnimationState("Walk");
 		}
 		else if (collisionState.standing) {
 			if (skeletonAnimation.state.ToString () == "Pulo Queda") skeletonAnimation.state.SetAnimation (0, "Pouso", false);
