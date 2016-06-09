@@ -40,12 +40,12 @@ public class AnimationController : MonoBehaviour {
 	}
 
 	void Update () {
-		if (inputState.absVelX <= walk.maxVelocity) {
+		if (inputState.absVelX < walk.maxVelocity) {
 			Boggy1.enabled = true;
 			Boggy2.enabled = false;
 		}
 
-		if (!wallJump.enabled) {
+		if (!wallJump.enabled && Boggy3.enabled) {
 			Boggy1.enabled = true;
 			Boggy3.enabled = false;
 		}
@@ -53,24 +53,33 @@ public class AnimationController : MonoBehaviour {
 
 		if (body2d.velocity.y > 0 && jump.jumpsRemaining == 1) {
 			if (skeletonAnimation.state.ToString () != "Pulo") ChangeAnimationState ("Pulo");
-			Boggy1.enabled = true;
-			Boggy3.enabled = false;
+			if (Boggy3.enabled) {
+				Boggy1.enabled = true;
+				Boggy3.enabled = false;
+			}
 		} 
 		else if (body2d.velocity.y > 0 && jump.jumpsRemaining == 0) {
 			if (skeletonAnimation.state.ToString () != "Pulo Duplo") ChangeAnimationState ("Pulo Duplo");
-			Boggy1.enabled = true;
-			Boggy2.enabled = false;
+			if (Boggy2.enabled) {
+				Boggy1.enabled = true;
+				Boggy2.enabled = false;
+			}
 		} 
 		else if (body2d.velocity.y < 0) {
 			if (skeletonAnimation.state.ToString () != "Pulo Queda") ChangeAnimationState ("Pulo Queda");
+			if (Boggy3.enabled) {
+				Boggy1.enabled = true;
+				Boggy3.enabled = false;
+			}
 		} 
 		else if (wallJump.enabled) {
 			Boggy1.enabled = false;
 			Boggy3.enabled = true;
 		}
-		else if (inputState.absVelX > walk.maxVelocity+1) {
+		else if (inputState.absVelX > walk.maxVelocity+1 && !Boggy2.enabled) {
 			Boggy1.enabled = false;
 			Boggy2.enabled = true;
+			Boggy2.GetComponent<SkeletonAnimation> ().state.SetAnimation (0, "EfeitoDeslize", true);
 		}
 		else if (inputState.absVelX > 0) {
 			if (skeletonAnimation.state.ToString () == "Pulo Queda") skeletonAnimation.state.SetAnimation (0, "Pouso", false);
