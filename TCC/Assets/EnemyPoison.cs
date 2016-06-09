@@ -7,13 +7,13 @@ public class EnemyPoison : MonoBehaviour {
 
 	public DeathType deathType;
 
-	private bool AlreadyDead;
+	private bool alreadyDead;
 
 	void OnTriggerEnter2D (Collider2D other) {
 		if (other.tag == "Resource") {
-			AlreadyDead = true;
+			alreadyDead = true;
 		}
-		if (other.tag == tagPlayer && !AlreadyDead) {
+		if (other.tag == tagPlayer && !alreadyDead) {
 			Death death = other.GetComponent<Death> ();
 
 			death.KillCharacter (deathType);

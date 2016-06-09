@@ -9,6 +9,12 @@ public class AnimationController : MonoBehaviour {
 	private InputState inputState;
 	private Rigidbody2D body2d;
 	private Jump jump;
+	private Walk walk;
+	private WallJump wallJump;
+
+	public MeshRenderer Boggy1;
+	public MeshRenderer Boggy2;
+	public MeshRenderer Boggy3;
 
 	void Awake() {
 		skeletonAnimation = GetComponent<SkeletonAnimation> ();
@@ -16,6 +22,9 @@ public class AnimationController : MonoBehaviour {
 		inputState = GetComponentInParent<InputState>();
 		body2d = GetComponentInParent<Rigidbody2D> ();
 		jump = GetComponentInParent<Jump> ();
+		walk = GetComponentInParent<Walk> ();
+		wallJump = GetComponentInParent<WallJump> ();
+
 	}
 
 	void Start () {
@@ -31,14 +40,37 @@ public class AnimationController : MonoBehaviour {
 	}
 
 	void Update () {
+		if (inputState.absVelX <= walk.maxVelocity) {
+			Boggy1.enabled = true;
+			Boggy2.enabled = false;
+		}
+
+		if (!wallJump.enabled) {
+			Boggy1.enabled = true;
+			Boggy3.enabled = false;
+		}
+
+
 		if (body2d.velocity.y > 0 && jump.jumpsRemaining == 1) {
-			if (skeletonAnimation.state.ToString () != "Pulo") ChangeAnimationState("Pulo");
-		}
+			if (skeletonAnimation.state.ToString () != "Pulo") ChangeAnimationState ("Pulo");
+			Boggy1.enabled = true;
+			Boggy3.enabled = false;
+		} 
 		else if (body2d.velocity.y > 0 && jump.jumpsRemaining == 0) {
-			if (skeletonAnimation.state.ToString () != "Pulo Duplo") ChangeAnimationState("Pulo Duplo");
-		}
+			if (skeletonAnimation.state.ToString () != "Pulo Duplo") ChangeAnimationState ("Pulo Duplo");
+			Boggy1.enabled = true;
+			Boggy2.enabled = false;
+		} 
 		else if (body2d.velocity.y < 0) {
-			if (skeletonAnimation.state.ToString () != "Pulo Queda") ChangeAnimationState("Pulo Queda");
+			if (skeletonAnimation.state.ToString () != "Pulo Queda") ChangeAnimationState ("Pulo Queda");
+		} 
+		else if (wallJump.enabled) {
+			Boggy1.enabled = false;
+			Boggy3.enabled = true;
+		}
+		else if (inputState.absVelX > walk.maxVelocity+1) {
+			Boggy1.enabled = false;
+			Boggy2.enabled = true;
 		}
 		else if (inputState.absVelX > 0) {
 			if (skeletonAnimation.state.ToString () == "Pulo Queda") skeletonAnimation.state.SetAnimation (0, "Pouso", false);
@@ -49,7 +81,6 @@ public class AnimationController : MonoBehaviour {
 			if (skeletonAnimation.state.ToString () == "Pulo Queda") skeletonAnimation.state.SetAnimation (0, "Pouso", false);
 			else if (skeletonAnimation.state.ToString () == "Pouso") skeletonAnimation.state.AddAnimation (0, "Idle", true, 0f);
 			else if (skeletonAnimation.state.ToString () != "Idle") ChangeAnimationState ("Idle");
-//			if (skeletonAnimation.state.ToString () != "Idle") ChangeAnimationState ("Idle");
 		}
 	}
 

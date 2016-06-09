@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Spine.Unity;
 
 public class EnemyShooter : MonoBehaviour {
+
+	private SkeletonAnimation skeletonAnimation;
 
 	public bool isStanding;
 
@@ -12,6 +15,10 @@ public class EnemyShooter : MonoBehaviour {
 	protected bool shotOutCamera = true;
 
 	private bool shotOutCameraReference;
+
+	void Awake() {
+		skeletonAnimation = GetComponentInChildren<SkeletonAnimation> ();
+	}
 
 	void Update() {
 		shotOutCameraReference = shotPrefab.GetComponent<Shot> ().shotOutCamera;
@@ -27,60 +34,70 @@ public class EnemyShooter : MonoBehaviour {
 		}
 
 		if (canGo && shotOutCamera) {
+			if (skeletonAnimation.state.ToString () != "InimigoAtiradorAtira") skeletonAnimation.state.SetAnimation(0, "InimigoAtiradorAtira", false);
+
 			canGo = false;
+		} 
+		else {
+			if (skeletonAnimation.state.GetCurrent (0) == null) {
+				ChangeAnimationState ("InimigoAtiradorIdle");
 
-			GameObject shot = shotPrefab;
+				GameObject shot = shotPrefab;
 
-			SpriteRenderer shotSprite = shot.GetComponent<SpriteRenderer> ();
+				SpriteRenderer shotSprite = shot.GetComponent<SpriteRenderer> ();
 
-			float halfWidthShot = (shotSprite.bounds.max.x - shotSprite.bounds.min.x)/2;
-			float halfHeightShot = (shotSprite.bounds.max.y - shotSprite.bounds.min.y)/2;
+				float halfWidthShot = (shotSprite.bounds.max.x - shotSprite.bounds.min.x) / 2;
+				float halfHeightShot = (shotSprite.bounds.max.y - shotSprite.bounds.min.y) / 2;
 
-			Vector3 positionDesired = Vector3.zero;
-			Vector3 scaleDesired = Vector3.zero;
-			Quaternion rotationDesired = transform.rotation;
+				Vector3 positionDesired = Vector3.zero;
+				Vector3 scaleDesired = Vector3.zero;
+				Quaternion rotationDesired = transform.rotation;
 
-			float direction = transform.localScale.x > 0 ? 1 : -1;
-			scaleDesired = new Vector3 (transform.localScale.x, shot.transform.localScale.y, shot.transform.localScale.z); 
+				float direction = transform.localScale.x > 0 ? 1 : -1;
+				scaleDesired = new Vector3 (transform.localScale.x, shot.transform.localScale.y, shot.transform.localScale.z); 
 
-			if (isStanding) {
-				float x = 0;
+				if (isStanding) {
+					float x = 0;
 
-				if (transform.localScale.x > 0) {
-					x = transform.GetComponent<SpriteRenderer> ().bounds.max.x + halfWidthShot;
-					direction = 1;
-				} else if (transform.localScale.x < 0) {
-					x = transform.GetComponent<SpriteRenderer> ().bounds.min.x - halfWidthShot;
-					direction = -1;
+					if (transform.localScale.x > 0) {
+						x = transform.GetComponent<SpriteRenderer> ().bounds.max.x + halfWidthShot;
+						direction = 1;
+					} else if (transform.localScale.x < 0) {
+						x = transform.GetComponent<SpriteRenderer> ().bounds.min.x - halfWidthShot;
+						direction = -1;
+					}
+
+					positionDesired = new Vector2 (x, transform.position.y);
+				} else {
+					float y = 0;
+
+					if (transform.localScale.x > 0) {
+						y = transform.GetComponent<SpriteRenderer> ().bounds.max.y + halfHeightShot;
+						direction = 1;
+					} else if (transform.localScale.x < 0) {
+						y = transform.GetComponent<SpriteRenderer> ().bounds.min.y - halfHeightShot;
+					}
+
+					positionDesired = new Vector2 (transform.position.x, y);
 				}
 
-				positionDesired = new Vector2 (x, transform.position.y);
+				shot.transform.localScale = scaleDesired;
+				shot.transform.rotation = rotationDesired;
+				shot.transform.position = positionDesired;
+
+				shotOutCamera = false;
+				shotPrefab.GetComponent<Shot> ().shotOutCamera = false;
+
+				Invoke ("CooldownShot", cdShot);
 			}
-			else {
-				float y = 0;
-
-				if (transform.localScale.x > 0) {
-					y = transform.GetComponent<SpriteRenderer> ().bounds.max.y + halfHeightShot;
-					direction = 1;
-				} else if (transform.localScale.x < 0) {
-					y = transform.GetComponent<SpriteRenderer> ().bounds.min.y - halfHeightShot;
-				}
-
-				positionDesired = new Vector2 (transform.position.x, y);
-			}
-
-			shot.transform.localScale = scaleDesired;
-			shot.transform.rotation = rotationDesired;
-			shot.transform.position = positionDesired;
-
-			shotOutCamera = false;
-			shotPrefab.GetComponent<Shot> ().shotOutCamera = false;
-
-			Invoke ("CooldownShot", cdShot);
 		}
 	}
 
 	void CooldownShot(){
 		canGo = true;
+	}
+
+	public void ChangeAnimationState(string animation){
+		skeletonAnimation.state.SetAnimation(0, animation, true);
 	}
 }
