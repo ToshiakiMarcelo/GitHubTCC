@@ -1,0 +1,236 @@
+
+Minhoca Boss.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Boca Inferiror
+  rotate: true
+  xy: 2, 218
+  size: 1162, 901
+  orig: 1164, 903
+  offset: 1, 1
+  index: -1
+Boca Superior
+  rotate: false
+  xy: 2, 2764
+  size: 1051, 1330
+  orig: 1053, 1332
+  offset: 1, 1
+  index: -1
+Dente 1
+  rotate: true
+  xy: 975, 1335
+  size: 224, 359
+  orig: 226, 361
+  offset: 1, 1
+  index: -1
+Dente 2
+  rotate: true
+  xy: 2, 26
+  size: 190, 288
+  orig: 192, 290
+  offset: 1, 1
+  index: -1
+Dente 3
+  rotate: true
+  xy: 1055, 2682
+  size: 582, 620
+  orig: 584, 622
+  offset: 1, 1
+  index: -1
+Dente 4
+  rotate: false
+  xy: 1677, 2749
+  size: 552, 515
+  orig: 554, 517
+  offset: 1, 1
+  index: -1
+Dente 5
+  rotate: false
+  xy: 975, 1561
+  size: 469, 565
+  orig: 471, 567
+  offset: 1, 1
+  index: -1
+Dente 6
+  rotate: false
+  xy: 1197, 1161
+  size: 121, 172
+  orig: 123, 174
+  offset: 1, 1
+  index: -1
+Dente 7
+  rotate: true
+  xy: 1473, 2163
+  size: 124, 219
+  orig: 126, 221
+  offset: 1, 1
+  index: -1
+Dente S1
+  rotate: false
+  xy: 975, 2128
+  size: 496, 552
+  orig: 498, 554
+  offset: 1, 1
+  index: -1
+Dente S2
+  rotate: false
+  xy: 905, 1012
+  size: 290, 321
+  orig: 292, 323
+  offset: 1, 1
+  index: -1
+Dente S3
+  rotate: false
+  xy: 2058, 2544
+  size: 171, 203
+  orig: 173, 205
+  offset: 1, 1
+  index: -1
+Dente S4
+  rotate: false
+  xy: 905, 758
+  size: 277, 252
+  orig: 279, 254
+  offset: 1, 1
+  index: -1
+Dente S5
+  rotate: true
+  xy: 292, 75
+  size: 141, 200
+  orig: 143, 202
+  offset: 1, 1
+  index: -1
+Dente S6
+  rotate: false
+  xy: 905, 487
+  size: 182, 269
+  orig: 184, 271
+  offset: 1, 1
+  index: -1
+Dente S7
+  rotate: false
+  xy: 1473, 2289
+  size: 248, 391
+  orig: 250, 393
+  offset: 1, 1
+  index: -1
+Olho Direito
+  rotate: false
+  xy: 2231, 2700
+  size: 167, 181
+  orig: 169, 183
+  offset: 1, 1
+  index: -1
+Olho Esquerdo
+  rotate: false
+  xy: 2231, 2883
+  size: 358, 381
+  orig: 360, 383
+  offset: 1, 1
+  index: -1
+Parte Frente
+  rotate: true
+  xy: 2496, 3334
+  size: 760, 1504
+  orig: 762, 1506
+  offset: 1, 1
+  index: -1
+Parte Meio
+  rotate: true
+  xy: 1055, 3266
+  size: 828, 1439
+  orig: 830, 1441
+  offset: 1, 1
+  index: -1
+Parte Tras
+  rotate: false
+  xy: 2, 1382
+  size: 971, 1380
+  orig: 973, 1382
+  offset: 1, 1
+  index: -1
+Pisco D1
+  rotate: false
+  xy: 1723, 2379
+  size: 333, 368
+  orig: 335, 370
+  offset: 1, 1
+  index: -1
+Pisco D2
+  rotate: false
+  xy: 2591, 2964
+  size: 337, 368
+  orig: 339, 370
+  offset: 1, 1
+  index: -1
+Pisco D3
+  rotate: false
+  xy: 2930, 2964
+  size: 337, 368
+  orig: 339, 370
+  offset: 1, 1
+  index: -1
+Pisco D4
+  rotate: false
+  xy: 3269, 2964
+  size: 337, 368
+  orig: 339, 370
+  offset: 1, 1
+  index: -1
+Pisco D5
+  rotate: false
+  xy: 3608, 2964
+  size: 337, 368
+  orig: 339, 370
+  offset: 1, 1
+  index: -1
+Pisco E1
+  rotate: true
+  xy: 494, 71
+  size: 145, 169
+  orig: 147, 171
+  offset: 1, 1
+  index: -1
+Pisco E2
+  rotate: false
+  xy: 905, 316
+  size: 148, 169
+  orig: 150, 171
+  offset: 1, 1
+  index: -1
+Pisco E3
+  rotate: true
+  xy: 2058, 2394
+  size: 148, 169
+  orig: 150, 171
+  offset: 1, 1
+  index: -1
+Pisco E4
+  rotate: false
+  xy: 2400, 2712
+  size: 148, 169
+  orig: 150, 171
+  offset: 1, 1
+  index: -1
+Pisco E5
+  rotate: true
+  xy: 2231, 2550
+  size: 148, 169
+  orig: 150, 171
+  offset: 1, 1
+  index: -1
+Pupila Direita
+  rotate: true
+  xy: 2, 2
+  size: 22, 25
+  orig: 24, 27
+  offset: 1, 1
+  index: -1
+Pupila Esquerda
+  rotate: true
+  xy: 2496, 3266
+  size: 66, 74
+  orig: 68, 76
+  offset: 1, 1
+  index: -1
